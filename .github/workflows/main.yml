@@ -23,4 +23,4 @@ jobs:
         run: aws s3 sync . s3://www.kalangaz.com --exclude ".git*" --delete
 
       - name: Invalidate CloudFront cache
-        run: aws cloudfront create-invalidation --distribution-id E262476383632 --paths "/*"
+        run: aws cloudfront create-invalidation --distribution-id E2SVPW1V3KREBK --paths "/*"
