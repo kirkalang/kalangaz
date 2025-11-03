@@ -35,6 +35,10 @@
       /* border-top: 2px solid darkslategray; */
     }
 
+    h2 {
+      margin-top: 48px;
+    }
+
     ul {
       padding-left: 20px;
     }
@@ -47,6 +51,54 @@
       color: #1caacd;
       text-decoration: none;
     }
+
+    .comment {
+      color: #4a3d33;
+      font-style: italic;
+      font-weight: lighter;
+    }
+
+    /* Table Styles */
+
+    table {
+      margin-left: 20px;
+      border-spacing: 0;
+      border-collapse: collapse;
+      width: 70%;
+    }
+
+    .col-item-recipe {
+      width: 40%;
+    }
+
+    .col-owner,
+    .col-notes {
+      width: 30%;
+    }
+
+    table th {
+      text-align: left;
+      text-decoration: underline;
+      border: 1px solid transparent;
+    }
+
+    table th,
+    table td {
+      border: 0;
+      padding: 10px;
+      vertical-align: top;
+    }
+
+    table tbody tr:nth-child(even) td {
+      background-color: #e9dfc7;
+    }
+
+    table.grocery-list tr :nth-child(2),
+    table.grocery-list tr :nth-child(3) {
+      text-align: center;
+    }
+
+    /* Table Styles End */
   </style>
 </head>
 
@@ -55,39 +107,133 @@
     <h1>Menu</h1>
 
     <h2>Thanksgiving Morning</h2>
-    <ul>
-      <li><a href="Recipes/Breakfast French Toast.html">Breakfast French Toast.</a></li>
-      <li>Bacon</li>
-      <li>Fruit Salad???</li>
-    </ul>
+    <table>
+      <thead>
+        <tr>
+          <th class="col-item-recipe">Recipe</th>
+          <th class="col-owner">Owner(s)</th>
+          <th class="col-notes">Notes</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><a href="Recipes/Breakfast French Toast.html">Breakfast French Toast.</a></td>
+          <td>Robin</td>
+          <td><span class="comment">(Typically a Christmas dish so may swap out.)</span></td>
+        </tr>
+        <tr>
+          <td>Bacon</td>
+          <td>Robin</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Fruit Salad???</td>
+          <td>Robin</td>
+          <td></td>
+        </tr>
+      </tbody>
+    </table>
 
 
     <h2>Thanksgiving Lunch</h2>
-    <ul>
-      <li>Snacks. Layout finger snacks. Olives. Nuts. Dried fruit. Cheese. ...</li>
-    </ul>
+    <table>
+      <thead>
+        <tr>
+          <th class="col-item-recipe">Recipe</th>
+          <th class="col-owner">Owner(s)</th>
+          <th class="col-notes">Notes</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Snacks. Layout finger snacks. TJs shrimp cocktail, Olives. Nuts. Dried fruit. Cheese...</td>
+          <td>Kirk, Robin, Betsy</td>
+          <td></td>
+        </tr>
+      </tbody>
+    </table>
 
     <h2>Thanksgiving Dinner</h2>
-    <ul>
-      <li><a href="Recipes/The Best Simple Roast Turkey with Gravy.html">The Best Simple Roast Turkey with Gravy</a>
-      </li>
-      <li><a href="Recipes/Grandma Lang's Bread Stuffing.html">Grandma Lang&apos;s Bread Stuffing.</a></li>
-
-      <li><a href="Recipes/Maple-Glazed Sweet Potatoes.html">Maple-Glazed Sweet Potatoes</a></li>
-      <li><a href="Recipes/Roasted Brussels Sprouts with Balsamic Reduction & Cranberries.html">Roasted Brussels Sprouts
-          with Balsamic Reduction &amp; Cranberries</a></li>
-      <li><a href="Recipes/The BEST Mashed Potatoes.html">The BEST Mashed Potatoes</a></li>
-      <li><a href="Recipes/Mom's Ambrosia.html">Mom&apos;s Ambrosia</a></li>
-      <li><a href="Recipes/Orange Bowknots.html">Orange Bowknots</a></li>
-      <li>Cranberry Sauce</li>
-    </ul>
+    <table>
+      <thead>
+        <tr>
+          <th class="col-item-recipe">Recipe</th>
+          <th class="col-owner">Owner(s)</th>
+          <th class="col-notes">Notes</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><a href="Recipes/The Best Simple Roast Turkey with Gravy.html">The Best Simple Roast Turkey with
+              Gravy</a></td>
+          <td>Kirk, Ken</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td><a href="Recipes/Grandma Lang's Bread Stuffing.html">Grandma Lang&apos;s Bread Stuffing.</a></td>
+          <td>Jim</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td><a href="Recipes/Maple-Glazed Sweet Potatoes.html">Maple-Glazed Sweet Potatoes.</a></td>
+          <td>Kirk</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td><a href="Recipes/Roasted Brussels Sprouts with Balsamic Reduction & Cranberries.html">Roasted Brussels
+              Sprouts
+              with Balsamic Reduction &amp; Pomegranate seeds</a></td>
+          <td>Mary, Kirk</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td><a href="Recipes/The BEST Mashed Potatoes.html">The BEST Mashed Potatoes</a></td>
+          <td>Mary, Kirk</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td><a href="Recipes/Mom's Ambrosia.html">Mom&apos;s Ambrosia</a></td>
+          <td>Robin</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td><a href="Recipes/Orange Bowknots.html">Orange Bowknots</a></td>
+          <td>Ken</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Cranberry Sauce</td>
+          <td>Kirk</td>
+          <td></td>
+        </tr>
+      </tbody>
+    </table>
 
     <h2>Thanksgiving Dessert</h2>
-    <ul>
-      <li><a href="Recipes/Gandma Lang's Apple Dumplings.html">Gandma Lang&apos;s Apple Dumplings. Optional. Can also do
-          an apple or other fruit pie.</a></li>
-      <li><a href="Recipes/Extra-Smooth Pumpkin Pie.html">Extra-Smooth Pumpkin Pie</a></li>
-    </ul>
+
+    <table>
+      <thead>
+        <tr>
+          <th class="col-item-recipe">Recipe</th>
+          <th class="col-owner">Owner(s)</th>
+          <th class="col-notes">Notes</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><a href="Recipes/Gandma Lang's Apple Dumplings.html">Gandma Lang&apos;s Apple Dumplings</a></td>
+          <td>Kirk, Betsy</td>
+          <td><span class="comment">Can also do an apple or other fruit pie</span></td>
+        </tr>
+        <tr>
+          <td><a href="Recipes/Extra-Smooth Pumpkin Pie.html">Extra-Smooth Pumpkin Pie</a></td>
+          <td>Betsy, Robin</td>
+          <td><span class="comment">Who else really wants pumpkin pie? Robin is fine with skipping as we've had other
+              pumpkin
+              spiced dessert this month.</span></td>
+        </tr>
+      </tbody>
+    </table>
   </div>
 
   <div class="container">
