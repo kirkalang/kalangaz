@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style type="text/css">
     html {
       background-color: #FAD5A5;
@@ -68,7 +69,15 @@
       border-spacing: 0;
       border-collapse: collapse;
       border-bottom: 1px solid #b9a495;
-      width: 80%;
+      /*width: 100%;*/
+    }
+
+    @media (max-width: 1000px) {
+      table {
+        margin-left: 0;
+        margin-right: auto;
+        /* Align to the left */
+      }
     }
 
     .col-item-recipe {
