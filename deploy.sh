@@ -17,3 +17,12 @@ else
    echo "\n\nExiting."
    exit 1
 fi
+
+# sleep for 10 seconds and then force and invalidate cache
+echo "\nsleep for 10 seconds."
+sleep 10
+
+echo "\nInvalidate the cloudfront cache"
+aws cloudfront create-invalidation --distribution-id E2SVPW1V3KREBK --paths "/*"
+
+echo "\nDone"
